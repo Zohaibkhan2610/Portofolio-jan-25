@@ -1,0 +1,17 @@
+name: Portfolio
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  first-job:
+    runs-on: windows-latest
+    steps:
+      - name : node --version
+      - name: npm --version
+      
