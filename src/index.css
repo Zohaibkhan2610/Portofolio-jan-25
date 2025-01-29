@@ -1,7 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background: linear-gradient(to bottom right, #805ad5, #b2f5ea);
+}
+
+
+@media screen and (max-width:768px) {
+    .ht-fit{
+        height: fit-content;
+    }
 }

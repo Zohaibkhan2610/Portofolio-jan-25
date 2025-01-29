@@ -13,8 +13,8 @@ function AboutWork() {
     whileInView={{opacity:1,scale:1}}
     viewport={{once:true}}
     transition={{duration:1.5}}
-    exit={{opacity:0}}
-    className='border h-fit rounded-xl justify-center text-left p-8 w-[60%] font-serif font-bold m-4'>
+    exit={{opacity:0,scale:0}}
+    className='border h-fit rounded-xl justify-center text-left md:p-8 p-4 md:w-[60%] w-[90%] font-serif font-bold m-4'>
       <WorkTitle
         Title="Skill"
         SkillF="Web Development:"
@@ -41,13 +41,12 @@ let WorkTitle = ({ Title, SkillF, SkillSen, SkillThrid, AboutSkill1, AboutSkill2
       whileInView={{opacity:1,scale:1}}
       viewport={{once:true}}
       transition={{duration:1.5}}
-      exit={{opacity:0}}
        className='text-left m-2 p-2'>
       <h1 id={SkillID} className='text-gray-100 text-3xl mb-4'>{Title}</h1>
       <div className="inline-flex flex-col pl-5">
-        <div className="flex text-left gap-4">
-          <span className='text-gray-300 mb-1'>{SkillF}</span>
-          <span className='flex gap-2 text-gray-100'>
+        <div className="sm:flex grid text-left md:gap-4 gap-2">
+          <span className='text-gray-300 mb-0'>{SkillF}</span>
+          <span className='flex gap-2 text-gray-100 mb-4'>
             {AboutSkill1}
             {AboutSkill2}
             {AboutSkill3}
