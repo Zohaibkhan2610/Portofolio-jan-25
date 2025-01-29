@@ -12,7 +12,7 @@ const Email = () => {
         exit={{ opacity: 0, x: 50 }}
       >
         <h1 className="text-3xl font-extrabold text-center text-gray-50 mb-6">Contact Us</h1>
-        <p className="text-center text-green-300 mb-8">
+        <p className="text-center text-black mb-8">
           We’d love to hear from you! Fill out the form below and we’ll get back to you as soon as possible.
         </p>
         <form className="space-y-6">
