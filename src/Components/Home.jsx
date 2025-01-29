@@ -5,12 +5,12 @@ import Projects from './Projects/Projects'
 import Email from './Email/Email'
 function Home() {
   return (
-    <>
+    <div className='overflow-hidden'>
     <Hero/>
     <About/>
     <Projects/>
     <Email/>
-    </>
+    </div>
   )
 }
 
